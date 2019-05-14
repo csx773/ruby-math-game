@@ -23,7 +23,10 @@ class Game
             switch_player
         end
         # put winner is some Player
-        puts "***** Winner Winner Chicken dinner for: #{@players[0].name} ****** "
+        puts "***** Winner Winner Chicken Dinner for: #{@players[0].name} ****** "
+        puts "***** GAME OVER ******"
+        puts "***** GOOD BYE ******"
+        
     end
 
     def ask_question 

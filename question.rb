@@ -10,9 +10,9 @@ class Question
         @answer = @num1 + @num2
     end
 
-    def guess_answer? guess
+    def check_answer? user_answer
     # returns true / false for answer input
-        if guess.to_i == @answer
+        if user_answer.to_i == @answer
             return true
         else 
             return false

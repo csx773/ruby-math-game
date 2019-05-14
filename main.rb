@@ -23,18 +23,15 @@ puts "=== START OF MAIN.RB ===="
 # Ted.remove_life
 
 # puts "current life of player is " + Ted.life.to_s
+player_one = Player.new("Sam")
+player_two = Player.new("Ben")
 
-player1 = Player.new("Sam")
-player2 = Player.new("Ben")
-
-mathGame = Game.new
-puts mathGame.players
-mathGame.get_player(player1)
-mathGame.get_player(player2)
+mathGame = Game.new player_one, player_two
 puts "Current players in game are " + mathGame.players.to_s
 
-mathGame.remove_player("Ben")
-puts "Current players in game are " + mathGame.players.to_s
+mathGame.start_game
+# mathGame.remove_player(player_one)
+# puts "Current players in game are " + mathGame.players.to_s
 
 
 
